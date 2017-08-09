@@ -1,10 +1,14 @@
 <!--index.wxml-->
-<view class="container">
-  <view  bindtap="bindViewTap" class="userinfo">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+<view class="{{userClass}}">
+    <view bindtap="bindViewTap" class="userinfo">
+        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </view>
+    <view class="usermotto">
+        <text class="user-motto">{{motto}}</text>
+    </view>
+</view>
+
+<view class="salient-panel">
+    <canvas canvas-id="canvas2" style="width:150px;height:150px;" />
 </view>

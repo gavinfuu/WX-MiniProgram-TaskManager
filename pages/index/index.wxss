@@ -1,4 +1,19 @@
 /**index.wxss**/
+
+.user-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+
+.loaded-user-container {
+    display: none;
+} 
+
 .userinfo {
   display: flex;
   flex-direction: column;
@@ -18,4 +33,13 @@
 
 .usermotto {
   margin-top: 200px;
+}
+
+/** salient **/
+.salient-panel {
+    display: flex;
+    justify-content: center;
+    background: #149EFF;
+    padding: 50px 0 35px;
+
 }
