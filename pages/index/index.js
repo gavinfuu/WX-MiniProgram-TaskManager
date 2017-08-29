@@ -31,6 +31,10 @@ Page({
             userClass: 'loaded-user-container'
         })
 
-        new Circle('canvas2')
+        let cr = new Circle('canvas2')
+        setTimeout(()=>{
+            cr.drow(0.5)
+        }, 1500)
+        
     }
 })

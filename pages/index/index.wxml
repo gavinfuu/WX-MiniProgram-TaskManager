@@ -10,5 +10,5 @@
 </view>
 
 <view class="salient-panel">
-    <canvas canvas-id="canvas2" style="width:150px;height:150px;" />
+    <canvas canvas-id="canvas2" style="width:150px; height:150px;" />
 </view>
