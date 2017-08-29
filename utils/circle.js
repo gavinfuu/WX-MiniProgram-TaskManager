@@ -1,36 +1,20 @@
-var Circle = function (canvas, value) {
+var Circle = function (canvas, options) {
     const ctx = wx.createCanvasContext(canvas)
 
     // Draw coordinates
     backgound()
 
     setTimeout(function () {
-        drowValue(0)
+        drowValue(options)
     }, 400)
 
-    this.animationDrow = function(value, time) {
+    this.drow = function (options) {
         backgound()
-
-        let len = Math.ceil(360 * value)
-        
-        let count = 0
-        let timer = setInterval(()=>{
-            if (count <= len) {
-                drowValue( count / 360 )
-            } else {
-                clearInterval(timer)
-            }
-
-            count++
-        }, 1)
+        drowValue(options)
     }
 
-    this.drow = function (value) {
-        backgound()
-        drowValue(value)
-    }
-
-    function drowValue(value) {
+    function drowValue(options) {
+        const value = Math.round(options.value / options.total * 100) / 100
         ctx.beginPath()
         ctx.arc(75, 75, 65, 1.5 * Math.PI, cover(value) * Math.PI, false)
         ctx.setLineCap('round')
@@ -38,6 +22,18 @@ var Circle = function (canvas, value) {
         ctx.setGlobalAlpha(1)
         ctx.setStrokeStyle('#FFB814')
         ctx.stroke()
+        ctx.draw(true)
+
+        ctx.setFillStyle('white')
+        ctx.setTextAlign('center')
+        ctx.setFontSize(30)
+        ctx.fillText(options.total, 75, 70)
+        ctx.setFontSize(12)
+        ctx.setFillStyle('#dddddd')
+        ctx.fillText(options.totalText, 75, 95)
+        ctx.setFontSize(16)
+        ctx.setFillStyle('#FFB814')
+        ctx.fillText(options.value, 75, 115)
         ctx.draw(true)
     }
 
@@ -52,11 +48,13 @@ var Circle = function (canvas, value) {
 
     function cover(value) {
         if (!value) {
-            return 1.5
-        } else if (value >= 0.25) {
-            return 2 * value + 1.5;
+            return 1.50
+        } else if (value <= 0.25) {
+            return 2 * value + 1.5
+        } else if (value < 1) {
+            return value * 2 - 0.5
         } else {
-            return value * 1.5 - 0.00001;
+            return 1.4999999;
         }
     }
 }

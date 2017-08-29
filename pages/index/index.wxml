@@ -10,5 +10,15 @@
 </view>
 
 <view class="salient-panel">
-    <canvas canvas-id="canvas2" style="width:150px; height:150px;" />
+    <view class="salient-ctm">
+        <image class="salient-icon" mode="aspectFill" src="{{modelSrc1}}"></image>
+        <view><text class="salient-text">{{modelText1}}</text></view>
+        <view><text class="salient-text" style="font-size: 20px;">{{modelCount1}}</text></view>
+    </view>
+    <canvas canvas-id="canvas2" style="width:150px; height:150px; margin-bottom: 25px;" />
+    <view class="salient-ctm">
+        <image class="salient-icon" mode="aspectFill" src="{{modelSrc2}}"></image>
+        <view><text class="salient-text">{{modelText2}}</text></view>
+        <view><text class="salient-text" style="font-size: 20px;">{{modelCount2}}</text></view>
+    </view>
 </view>

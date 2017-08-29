@@ -7,6 +7,12 @@ Page({
     data: {
         userClass: 'user-container',
         motto: 'Hello World',
+        modelCount1: 10,
+        modelText1: '今日客户',
+        modelSrc1: '../../style/images/customers.png',
+        modelCount2: 3,
+        modelText2: '今日路线',
+        modelSrc2: '../../style/images/roads.png',
         userInfo: {}
     },
     //事件处理函数
@@ -31,10 +37,10 @@ Page({
             userClass: 'loaded-user-container'
         })
 
-        let cr = new Circle('canvas2')
-        setTimeout(()=>{
-            cr.drow(0.5)
-        }, 1500)
-        
+        let cr = new Circle('canvas2', {
+            totalText: '今日需拣数量',
+            total: 1000,
+            value: 50
+        })
     }
 })

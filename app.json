@@ -7,7 +7,7 @@
     "backgroundTextStyle":"light",
     "backgroundColor": "#ddd",
     "navigationBarBackgroundColor": "#149EFF",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "拣货监控",
     "navigationBarTextStyle":"#fff"
   }
 }
