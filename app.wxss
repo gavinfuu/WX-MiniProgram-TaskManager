@@ -3,3 +3,37 @@ page {
   height: 100%;
   background: #F8F8F8;
 }
+
+/**top search container**/
+
+.top-search {
+    background: #149eff;
+    padding: 5px 15px 8px 15px;
+}
+
+.top-search-ipt-h {
+    font-size: 16px;
+    text-align: center;
+    color: #6e92ac;
+}
+
+.top-search-ipt {
+    color: #149eff;
+    font-size: 16px;
+    background: #c6e7ff;
+    border: 1px solid #96d2fd;
+    border-radius: 8px;
+    padding: 5px 15px;
+    padding-left: 35px;
+}
+
+.top-search-icon {
+    position: absolute;
+    left: 25px;
+    top: 15px;
+}
+
+.top-search image {
+    width: 16px;
+    height: 16px;
+}

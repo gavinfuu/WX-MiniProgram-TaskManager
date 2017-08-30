@@ -15,6 +15,11 @@ Page({
         modelSrc2: '../../style/images/roads.png',
         userInfo: {}
     },
+    search: () => {
+        wx.navigateTo({
+            url: '../search/search'
+        })
+    },
     //事件处理函数
     bindViewTap: function () {
         wx.navigateTo({
@@ -40,7 +45,7 @@ Page({
         let cr = new Circle('canvas2', {
             totalText: '今日需拣数量',
             total: 1000,
-            value: 50
+            value: 650
         })
     }
 })

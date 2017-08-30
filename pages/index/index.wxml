@@ -8,7 +8,12 @@
         <text class="user-motto">{{motto}}</text>
     </view>
 </view>
-
+<view class="top-search">
+    <image class="top-search-icon" mode="aspectFill" src="../../style/images/search.png"></image>
+    <view bindtap="search" class="top-search-ipt" >
+        <text class="top-search-ipt-h">客户 / 拣货任务 / 路线</text>
+    </view>
+</view>
 <view class="salient-panel">
     <view class="salient-ctm">
         <image class="salient-icon" mode="aspectFill" src="{{modelSrc1}}"></image>

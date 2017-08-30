@@ -1,0 +1,35 @@
+.seach-real {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.seach-real .top-search-ipt {
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+.search-real-cancel {
+    width: 50px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}
+
+.scroll-view-container {
+    position: absolute;
+    top: 47px;
+    bottom: 0;
+    overflow: hidden;
+    background: #f5f5f5;
+}
+
+.rs-item-container {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+}

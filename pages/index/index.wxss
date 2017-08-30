@@ -1,48 +1,48 @@
 /**index.wxss**/
 
 .user-container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 200rpx 0;
-  box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 200rpx 0;
+    box-sizing: border-box;
 }
 
 .loaded-user-container {
     display: none;
-} 
+}
 
 .userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+    width: 128rpx;
+    height: 128rpx;
+    margin: 20rpx;
+    border-radius: 50%;
 }
 
 .userinfo-nickname {
-  color: #aaa;
+    color: #aaa;
 }
 
 .usermotto {
-  margin-top: 200px;
+    margin-top: 200px;
 }
 
 /** salient **/
+
 .salient-panel {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: flex-end;
-    background: #149EFF;
+    background: #149eff;
     padding: 50px 0 30px;
-
 }
 
 .salient-ctm {
