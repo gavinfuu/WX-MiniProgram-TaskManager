@@ -1,29 +1,87 @@
 <!--index.wxml-->
-<view class="{{userClass}}">
-    <view bindtap="bindViewTap" class="userinfo">
-        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </view>
-    <view class="usermotto">
-        <text class="user-motto">{{motto}}</text>
-    </view>
-</view>
-<view class="top-search">
+<!-- <view class="top-search">
     <image class="top-search-icon" mode="aspectFill" src="../../style/images/search.png"></image>
     <view bindtap="search" class="top-search-ipt" >
-        <text class="top-search-ipt-h">客户 / 拣货任务 / 路线</text>
+        <text class="top-search-ipt-h">客户/拣货任务/路线</text>
     </view>
-</view>
+</view> -->
 <view class="salient-panel">
     <view class="salient-ctm">
         <image class="salient-icon" mode="aspectFill" src="{{modelSrc1}}"></image>
         <view><text class="salient-text">{{modelText1}}</text></view>
-        <view><text class="salient-text" style="font-size: 20px;">{{modelCount1}}</text></view>
     </view>
-    <canvas canvas-id="canvas2" style="width:150px; height:150px; margin-bottom: 25px;" />
+    <view class="">
+      <canvas canvas-id="canvas2" style="width:150px; height:150px;" />
+      <view class="salient-info-ctm">
+        <view>
+          <view>36 - <text class="sign-text-c">12</text></view>
+          <view class="label-text-c">客户 | 完成</view>
+        </view>
+        <view>
+          <view><text class="sign-text-c">2</text> - 5</view>
+          <view class="label-text-c">完成 | 路线</view>
+        </view>
+      </view>
+    </view>
     <view class="salient-ctm">
         <image class="salient-icon" mode="aspectFill" src="{{modelSrc2}}"></image>
         <view><text class="salient-text">{{modelText2}}</text></view>
-        <view><text class="salient-text" style="font-size: 20px;">{{modelCount2}}</text></view>
     </view>
+</view>
+
+<view class="salient-nav-ctm boxing-tool">
+  <view class="s-nav-item">
+    <view class="s-nav-item-icon"><text class="iconfont icon-task-plan"></text></view>
+    <view><text>计划任务</text></view>
+  </view>
+  <view class="s-nav-item">
+    <view class="s-nav-item-icon"><text class="iconfont icon-jianhuo"></text></view>
+    <view><text>正在拣货</text></view>
+  </view>
+    <view class="s-nav-item">
+    <view class="s-nav-item-icon"><text class="iconfont icon-abnormal-receive"></text></view>
+    <view><text>异常任务</text></view>
+  </view>
+    <view class="s-nav-item">
+    <view class="s-nav-item-icon"><text class="iconfont icon-system-extension"></text></view>
+    <view><text>管理设置</text></view>
+  </view>
+</view>
+
+
+<view class="quick-tool-ctm">
+  <view class="quick-tool-title">
+    <text>快捷链接</text>
+  </view>
+<view class="salient-nav-ctm" style="margin: 0;">
+  <view class="s-nav-item">
+    <view class="s-nav-item-icon"><text class="iconfont icon-map sign-c"></text></view>
+    <view><text>仓库地图</text></view>
+  </view>
+<view class="s-nav-item">
+    <view class="s-nav-item-icon"><text class="iconfont icon-map sign-c"></text></view>
+    <view><text>仓库地图</text></view>
+  </view><view class="s-nav-item">
+    <view class="s-nav-item-icon"><text class="iconfont icon-map sign-c"></text></view>
+    <view><text>仓库地图</text></view>
+  </view><view class="s-nav-item">
+    <view class="s-nav-item-icon"><text class="iconfont icon-map sign-c"></text></view>
+    <view><text>仓库地图</text></view>
+  </view><view class="s-nav-item">
+    <view class="s-nav-item-icon"><text class="iconfont icon-map sign-c"></text></view>
+    <view><text>仓库地图</text></view>
+  </view><view class="s-nav-item">
+    <view class="s-nav-item-icon"><text class="iconfont icon-map sign-c"></text></view>
+    <view><text>仓库地图</text></view>
+  </view><view class="s-nav-item">
+    <view class="s-nav-item-icon"><text class="iconfont icon-map sign-c"></text></view>
+    <view><text>仓库地图</text></view>
+  </view><view class="s-nav-item">
+    <view class="s-nav-item-icon"><text class="iconfont icon-map sign-c"></text></view>
+    <view><text>仓库地图</text></view>
+  </view><view class="s-nav-item">
+    <view class="s-nav-item-icon"><text class="iconfont icon-map sign-c"></text></view>
+    <view><text>仓库地图</text></view>
+  </view>
+</view>
 </view>

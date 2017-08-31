@@ -24,16 +24,16 @@ var Circle = function (canvas, options) {
         ctx.stroke()
         ctx.draw(true)
 
-        ctx.setFillStyle('white')
+        ctx.setFillStyle('#FFB814')
         ctx.setTextAlign('center')
         ctx.setFontSize(30)
-        ctx.fillText(options.total, 75, 70)
+        ctx.fillText(options.value, 75, 70)
         ctx.setFontSize(12)
         ctx.setFillStyle('#dddddd')
         ctx.fillText(options.totalText, 75, 95)
         ctx.setFontSize(16)
-        ctx.setFillStyle('#FFB814')
-        ctx.fillText(options.value, 75, 115)
+        ctx.setFillStyle('white')
+        ctx.fillText(options.total, 75, 115)
         ctx.draw(true)
     }
 
