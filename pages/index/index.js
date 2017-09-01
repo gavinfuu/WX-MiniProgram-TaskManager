@@ -38,9 +38,11 @@ Page({
         })
     },
     onReady: function () {
+      setTimeout(()=>{
         this.setData({
-            userClass: 'loaded-user-container'
+          userClass: 'loaded-user-container'
         })
+      }, 0)
 
         let cr = new Circle('canvas2', {
             totalText: '今日需拣数量',

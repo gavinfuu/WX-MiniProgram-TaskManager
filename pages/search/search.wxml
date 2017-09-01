@@ -2,7 +2,7 @@
     <image class="top-search-icon" mode="aspectFill" src="../../style/images/search.png"></image>
     <input class="top-search-ipt" placeholder-class="top-search-ipt-h" placeholder="客户 / 拣货任务 / 路线" auto-focus="true" />
     <view class="search-real-cancel">
-        <text>取消</text>
+        <text bindtap="cancel">取消</text>
     </view>
 </view>
 
