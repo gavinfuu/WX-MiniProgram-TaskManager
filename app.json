@@ -6,7 +6,7 @@
     ],
     "window": {
         "backgroundTextStyle": "light",
-        "backgroundColor": "#ddd",
+        "backgroundColor": "#f3f3f3",
         "navigationBarBackgroundColor": "#149EFF",
         "navigationBarTitleText": "拣货监控",
         "navigationBarTextStyle": "#fff"

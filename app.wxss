@@ -1,70 +1,9 @@
-@font-face {
-  font-family: 'iconfont';  /* project id 402002 */
-  src: url('//at.alicdn.com/t/font_402002_e1p57x3rg16mvx6r.eot');
-  src: url('//at.alicdn.com/t/font_402002_e1p57x3rg16mvx6r.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_402002_e1p57x3rg16mvx6r.woff') format('woff'),
-  url('//at.alicdn.com/t/font_402002_e1p57x3rg16mvx6r.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_402002_e1p57x3rg16mvx6r.svg#iconfont') format('svg');
-}
-
-.iconfont {
-    font-family: "iconfont" !important;
-    font-size: 16px;
-    font-style: normal;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-yuyin:before {
-    content: "\e602";
-}
-
-.icon-saoma:before {
-    content: "\e61e";
-}
-
-.icon-system-extension:before {
-    content: "\e64e";
-}
-
-.icon-real-time-alarm:before {
-    content: "\e64f";
-}
-
-.icon-inquiry:before {
-    content: "\e652";
-}
-
-.icon-group:before {
-    content: "\e653";
-}
-
-.icon-video-surveillance:before {
-    content: "\e654";
-}
-
-.icon-entry-exit:before {
-    content: "\e655";
-}
-
-.icon-task-plan:before {
-    content: "\e65b";
-}
-
-.icon-job-statistics:before {
-    content: "\e660";
-}
-
-.icon-xianlu:before {
-    content: "\e630";
-}
-
-
 /**app.wxss**/
+@import "./style/fonticon.wxss";
 
 page {
-    height: 100%;
-    background: #f8f8f8;
+  height: 100%;
+  background: #f3f3f3;
 }
 
 /**top search container**/
