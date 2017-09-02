@@ -1,7 +1,7 @@
 <!--index.wxml-->
 <view class="top-search">
     <view class="top-search-item">
-        <text class="iconfont icon-saoma"></text>
+        <text bindtap="scanCode" class="iconfont icon-saoma"></text>
     </view>
     <view class="top-search-ipt-c">
         <view bindtap="search" class="top-search-ipt">
@@ -9,7 +9,7 @@
         </view>
     </view>
     <view class="top-search-item" style="padding-left: 15px; padding-right: 0;">
-        <text class="iconfont icon-yuyin"></text>
+        <text bindtap="startRecord" class="iconfont icon-yuyin"></text>
     </view>
 </view>
 <view class="salient-panel">
@@ -37,12 +37,12 @@
 </view>
 
 <view class="salient-nav-ctm boxing-tool">
-    <view class="s-nav-item">
-        <view class="s-nav-item-icon"><text class="iconfont icon-task-plan"></text></view>
+    <view bindtap="tasks" class="s-nav-item">
+        <view class="s-nav-item-icon"><text class="iconfont icon-task"></text></view>
         <view><text>计划任务</text></view>
     </view>
     <view class="s-nav-item">
-        <view class="s-nav-item-icon"><text class="iconfont icon-jianhuo"></text></view>
+        <view class="s-nav-item-icon"><text class="iconfont icon-tuiche"></text></view>
         <view><text>正在拣货</text></view>
     </view>
     <view class="s-nav-item">
@@ -60,7 +60,7 @@
     <view class="quick-tool-title">
         <text>快捷链接</text>
     </view>
-    <view class="salient-nav-ctm" style="margin: 0;">
+    <view class="salient-nav-ctm quick-nav">
         <view class="s-nav-item">
             <view class="s-nav-item-icon"><text class="iconfont icon-map sign-c"></text></view>
             <view><text>仓库地图</text></view>

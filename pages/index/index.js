@@ -15,9 +15,33 @@ Page({
         modelSrc2: '../../style/images/roads.png',
         userInfo: {}
     },
+    tasks: () => {
+        wx.navigateTo({
+            url: '../module/task/tasklist'
+        })
+    },
     search: () => {
         wx.navigateTo({
             url: '../search/search'
+        })
+    },
+    startRecord: () => {
+        wx.startRecord({
+            success: (res) => {
+                console.log(res.tempFilePath)
+            }
+        })
+    },
+    scanCode: () => {
+        wx.scanCode({
+            success: (res) => {
+                wx.navigateTo({
+                    url: '../search/search?text=' + res.result
+                })
+            },
+            fail: () => {
+
+            }
         })
     },
     //事件处理函数

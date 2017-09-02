@@ -1,13 +1,62 @@
-<view class="top-search seach-real">
-    <image class="top-search-icon" mode="aspectFill" src="../../style/images/search.png"></image>
-    <input class="top-search-ipt" placeholder-class="top-search-ipt-h" placeholder="客户 / 拣货任务 / 路线" auto-focus="true" />
+<view class="top-search">
+    <view class="top-search-item">
+        <text class="iconfont icon-yuyin"></text>
+    </view>
+    <view class="top-search-ipt-c">
+        <input value="{{text}}" confirm-type="search" class="top-search-ipt" style="text-align: left;" placeholder="客户 / 拣货任务 / 路线" placeholder-class="top-search-ipt-h" placeholder-style="text-align: left;" auto-focus="true" />
+    </view>
     <view class="search-real-cancel">
         <text bindtap="cancel">取消</text>
     </view>
 </view>
 
 <scroll-view scroll-y class="scroll-view-container">
-    <view class="rs-item-container" wx:for="{{tdata}}" wx:key="item.value">
-        <text>{{item.label}}</text>
+    <view class="group-panel">
+        <view class="group-title">
+            <text>任务</text>
+        </view>
+
+        <view class="group-item-container" wx:for="{{tdata.tasks}}" wx:key="item.value">
+            <view><text class="iconfont icon-saomiaotiaoma item-icon task-color"></text></view>
+            <view class="item-info-ctm">
+                <view>
+                    <text style="font-size: 12px;">{{item.barcode}}<text class="srd-text">#{{item.goodscode}}</text>
+                    </text>
+                </view>
+                <view>
+                    <text class="main-body-text">{{item.goodsname}}</text>
+                </view>
+                <view>
+                    <text class="srd-text">品牌 : {{item.brandname}} | 品类 : {{item.classname}} | {{item.spec}}</text>
+                </view>
+            </view>
+            <view class="item-action">
+                <text class="iconfont icon-you"></text>
+            </view>
+        </view>
     </view>
-  </scroll-view>
+
+    <view class="group-panel" wx:if="{{tdata.customers}}">
+        <view class="group-title">
+            <text>客户</text>
+        </view>
+
+        <view class="group-item-container" wx:for="{{tdata.customers}}" wx:key="item.value">
+            <view><text class="iconfont icon-personal item-icon customer-color"></text></view>
+            <view class="item-info-ctm">
+                <view>
+                    <text class="main-body-text">{{item.customername}}</text>
+                </view>
+                <view>
+                    <text class="srd-text">品项数 : {{item.barcodeqty}} | 数量 : {{item.qty}}</text>
+                </view>
+            </view>
+            <view>
+                <text class="label {{item.day === 1 ? 'label-warning': 'label-info'}}">{{item.dayland}}</text>
+            </view>
+            <view class="item-action">
+                <text class="iconfont icon-you"></text>
+            </view>
+        </view>
+    </view>
+</scroll-view>

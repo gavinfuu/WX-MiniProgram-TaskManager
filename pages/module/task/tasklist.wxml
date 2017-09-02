@@ -1,0 +1,35 @@
+<!--pages/module/task/tasklist/tasklist.wxml-->
+<view class="top-search">
+    <view class="top-search-ipt-c">
+        <input value="{{text}}" confirm-type="search" class="top-search-ipt" style="text-align: left;" placeholder="客户 / 拣货任务 / 路线" placeholder-class="top-search-ipt-h" placeholder-style="text-align: left;" />
+    </view>
+</view>
+
+<view class="task-container" wx:for="{{tasklist}}" wx:key="{{item.taskname}}">
+    <view class="task-label">
+        <text class="iconfont icon-mark task-icon"></text>
+        <text class="task-status">进行中</text>
+    </view>
+    <view class="task-header">
+        <view class="task-title">
+            <text>{{item.taskname}}</text>
+        </view>
+    </view>
+    <view class="task-description">
+        <text>周期拣货、周一路线共3个品项数，250件商品</text>
+    </view>
+
+    <view class="task-manager">
+        <view>
+            <text class="iconfont icon-user task-manager-icon"></text>
+        </view>
+        <view class="task-manager-info">
+            <view><text class="task-manager-text">{{item.mainperson}}</text></view>
+            <view><text class="task-manager-title">负责人</text></view>
+        </view>
+        <view>
+            <text bindtap="go2detail" class="task-go-icon">进入详情<text class="iconfont icon-you" style="font-size: 12px;margin-left: 2px;"></text>
+            </text>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,91 @@
+/* pages/module/task/tasklist/tasklist.wxss */
+page {
+    color: #495060;
+    letter-spacing: 1px;
+}
+
+.task-container {
+    position: relative;
+    font-size: 12px;
+    background: #fff;
+    padding: 20px 20px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.task-label {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding-bottom: 15px;
+}
+
+.task-status {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+}
+
+.task-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.task-icon {
+    font-size: 30px;
+    color: #149eff;
+}
+
+.task-title {
+    color: #1c2438;
+    flex-grow: 1;
+    flex-shrink: 1;
+    font-size: 16px;
+    font-weight: bold;
+    padding-right: 50px;
+    letter-spacing: 1.5px;
+}
+
+.task-go-icon {
+    text-align: center;
+    padding: 3px 10px;
+    border: .5px solid #ddd;
+    border-radius: 15px;
+}
+
+.task-description {
+    font-size: 12px;
+    padding-top: 10px;
+    color: #80848f;
+}
+
+.task-manager {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.task-manager-info {
+    flex-grow: 1;
+    flex-direction: 1;
+}
+
+.task-manager-text {
+    font-size: 14px;
+    color: #495060;
+}
+
+.task-manager-title {
+    padding-top: 8px;
+    font-size: 12px;
+    color: #bbbec4;
+}
+
+.task-manager-icon {
+    padding: 10px 15px 10px 0;
+    font-size: 30px;
+    color: #bbbec4;
+}

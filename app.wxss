@@ -1,9 +1,10 @@
 /**app.wxss**/
 @import "./style/fonticon.wxss";
+@import "./style/modal.wxss";
 
 page {
   height: 100%;
-  background: #f3f3f3;
+  background: #f3f4f8;
 }
 
 /**top search container**/
@@ -32,15 +33,15 @@ page {
 .top-search-ipt-h {
     font-size: 16px;
     text-align: center;
-    color: #6e92ac;
+    color: #92D2FF;
 }
 
 .top-search-ipt {
     position: relative;
-    color: #149eff;
+    color: #fff;
     font-size: 16px;
-    background: #c6e7ff;
-    border: 1px solid #96d2fd;
+    background: #34AAFD;
+    border: 1px solid #34AAFD;
     border-radius: 8px;
     padding: 5px 15px;
     text-align: center;

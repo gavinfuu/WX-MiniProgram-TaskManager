@@ -1,3 +1,7 @@
+page {
+    font-size: 12px;
+}
+
 .seach-real {
     position: relative;
     display: flex;
@@ -28,8 +32,74 @@
     background: #f5f5f5;
 }
 
-.rs-item-container {
+.group-panel {
+    padding-left: 12px;
     background: #fff;
-    padding: 15px;
     margin-bottom: 10px;
+}
+
+.group-title {
+    padding: 10px 10px 10px 0;
+    font-size: 14px;
+    color: #80848f;
+}
+
+.group-item-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #fff;
+    padding: 15px 15px 15px 0;
+    border-top: .5px solid #ddd;
+}
+
+.group-item-container .icon-you {
+    color: #ddd;
+}
+
+.item-icon {
+    padding: 8px 10px;
+    font-size: 30px;
+}
+
+.task-color {
+    color: #FFB814;
+}
+
+.item-info-ctm {
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+.item-action {
+    padding: 10px;
+}
+
+.main-body-text {
+    word-break: break-all;
+    font-size: 16px;
+}
+
+.srd-text {
+    color: #80848f;
+    font-size: 12px;
+}
+
+.customer-color {
+    color: #149eff;
+}
+
+.label {
+    border-radius: 4px;
+    padding: 2px 5px;
+}
+
+.label-warning {
+    color: #fff;
+    background: #FFB814;
+}
+
+.label-info {
+    color: #fff;
+    background: #5cadff;
 }

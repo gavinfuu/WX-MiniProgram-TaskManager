@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'iconfont';  /* project id 402002 */
-  src: url('//at.alicdn.com/t/font_402002_4oq9hkveac680k9.eot');
-  src: url('//at.alicdn.com/t/font_402002_4oq9hkveac680k9.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_402002_4oq9hkveac680k9.woff') format('woff'),
-  url('//at.alicdn.com/t/font_402002_4oq9hkveac680k9.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_402002_4oq9hkveac680k9.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_402002_g40tshbsumm6xbt9.eot');
+  src: url('//at.alicdn.com/t/font_402002_g40tshbsumm6xbt9.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_402002_g40tshbsumm6xbt9.woff') format('woff'),
+  url('//at.alicdn.com/t/font_402002_g40tshbsumm6xbt9.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_402002_g40tshbsumm6xbt9.svg#iconfont') format('svg');
 }
 
 .iconfont {
@@ -15,17 +15,41 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-mark:before { content: "\e6b1"; }
+
+.icon-ioscloseoutline:before { content: "\e634"; }
+
+.icon-tuiche:before { content: "\e612"; }
+
 .icon-map:before { content: "\e67d"; }
+
+.icon-qizhikuai:before { content: "\e6a4"; }
+
+.icon-shuaxin:before { content: "\e6fc"; }
 
 .icon-yuyin:before { content: "\e602"; }
 
+.icon-user:before { content: "\e601"; }
+
+.icon-task:before { content: "\e603"; }
+
+.icon-saomiaotiaoma:before { content: "\e600"; }
+
+.icon-xiaotuiche:before { content: "\e60b"; }
+
 .icon-saoma:before { content: "\e61e"; }
+
+.icon-you:before { content: "\e605"; }
 
 .icon-xianlu_:before { content: "\e630"; }
 
 .icon-abnormal-receive:before { content: "\e714"; }
 
-.icon-jianhuo:before { content: "\e6dd"; }
+.icon-yanhuo:before { content: "\e689"; }
+
+.icon-baoguo:before { content: "\e6c1"; }
+
+.icon-buzhou:before { content: "\e610"; }
 
 .icon-system-extension:before { content: "\e64e"; }
 
@@ -35,6 +59,8 @@
 
 .icon-group:before { content: "\e653"; }
 
+.icon-personal:before { content: "\e656"; }
+
 .icon-video-surveillance:before { content: "\e654"; }
 
 .icon-entry-exit:before { content: "\e655"; }
@@ -42,6 +68,3 @@
 .icon-task-plan:before { content: "\e65b"; }
 
 .icon-job-statistics:before { content: "\e660"; }
-
-
-
