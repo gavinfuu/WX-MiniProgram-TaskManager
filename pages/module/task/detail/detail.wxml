@@ -35,31 +35,30 @@
         <view class="task-i-icons">
             <view class="task-i-step" bindlongpress="toggle" data-statu="open">
                 <view class="st-type">
-                    <text class="iconfont icon-xiaotuiche" style="font-size: 128px; color: #ffb814;"></text>
+                    <text class="iconfont icon-xiaotuiche st-size"></text>
                 </view>
-                <view class="st-user">符小珉 <text>56/100</text></view>
+                <view class="st-user"><text>56/100</text></view>
+                <view class="st-slider-b"><text class="st-slider" style="width: 100px;"></text></view>
+                <view class="st-time">2017.09.01</view>
+            </view>
+            <view class="task-i-step">
+                <view class="st-type">
+                    <text class="iconfont icon-baoguo st-size"></text>
+                </view>
+                <view class="st-user"><text>56/100</text></view>
                 <view class="st-slider-b"><text class="st-slider"></text></view>
                 <view class="st-time">2017.09.01</view>
             </view>
             <view class="task-i-step">
                 <view class="st-type">
-                    <text class="iconfont icon-baoguo" style="font-size: 128px; color: #ffb814;"></text>
+                    <text class="iconfont icon-yanhuo st-size"></text>
                 </view>
-                <view class="st-user">符小珉 <text>56/100</text></view>
-                <view class="st-slider-b"><text class="st-slider"></text></view>
-                <view class="st-time">2017.09.01</view>
-            </view>
-            <view class="task-i-step">
-                <view class="st-type">
-                    <text class="iconfont icon-yanhuo" style="font-size: 128px; color: #ffb814;"></text>
-                </view>
-                <view class="st-user">符小珉 <text>56/100</text></view>
+                <view class="st-user"><text>56/100</text></view>
                 <view class="st-slider-b"><text class="st-slider"></text></view>
                 <view class="st-time">2017.09.01</view>
             </view>
         </view>
     </view>
-
 </view>
 
 
@@ -68,33 +67,13 @@
 <!--content-->
 <!--使用animation属性指定需要执行的动画-->
 <view animation="{{animationData}}" class="drawer_box" wx:if="{{showModalStatus}}">
-    <text class="iconfont icon-ioscloseoutline drawer_close" bindtap="toggle" data-statu="close"></text>
+    <!-- <text class="iconfont icon-ioscloseoutline drawer_close" bindtap="toggle" data-statu="close"></text> -->
 
     <!--drawer content-->
-    <view class="drawer_content">
-        <view class="group-panel">
-            <view class="group-title">
-                <text>条码</text>
-            </view>
-
-            <view class="group-item-container" wx:for="{{subdetails}}" wx:key="item.value">
-                <view><text class="iconfont icon-saomiaotiaoma item-icon task-color"></text></view>
-                <view class="item-info-ctm">
-                    <view>
-                        <text style="font-size: 12px;">{{item.barcode}}<text class="srd-text">#{{item.goodscode}}</text>
-                        </text>
-                    </view>
-                    <view>
-                        <text class="main-body-text">{{item.goodsname}}</text>
-                    </view>
-                    <view>
-                        <text class="srd-text">品牌 : {{item.brandname}} | 品类 : {{item.classname}} | {{item.spec}}</text>
-                    </view>
-                </view>
-                <view class="item-action">
-                    <text class="iconfont icon-you"></text>
-                </view>
-            </view>
+    <view class="drawer_content boxing-tool">
+        <view class="drawer_header">
+            <text>14个条码</text>
+            <text class="iconfont icon-ioscloseoutline drawer_close" bindtap="toggle" data-statu="close"></text>
         </view>
     </view>
 </view>

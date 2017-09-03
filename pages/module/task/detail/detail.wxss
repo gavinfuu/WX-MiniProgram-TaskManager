@@ -2,6 +2,10 @@
 @import '../tasklist.wxss';
 @import '../../../search/search.wxss';
 
+.boxing-tool {
+    box-shadow:0 3px 8px rgba(0, 0, 0, 0.5);
+}
+
 .gradient-top-left {
     background-image: -webkit-linear-gradient(to left top, #1ec2f5, #149eff);
     background-image: linear-gradient(to left top, #1ec2f5, #149eff);
@@ -95,9 +99,9 @@
 
 .st-type {
     position: absolute;
-    top: -50px;
-    left: 50%;
-    margin-left: -62px;
+    right: 0;
+    top: 0;
+    /* margin-left: -62px; */
 }
 
 .st-slider-b {
@@ -120,4 +124,9 @@
     background: rgba(255, 255, 255, 0.5);
     background-image: -webkit-linear-gradient(to right top, #5feaa4, #19be6b);
     background-image: linear-gradient(to right top, #5feaa4, #19be6b);
+}
+
+.st-size {
+    font-size: 64px!important;
+    color: #ffb814;
 }
