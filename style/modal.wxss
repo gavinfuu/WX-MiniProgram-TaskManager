@@ -34,8 +34,9 @@
 
 .drawer_close {
     position: absolute;
+    top: 0;
     right: 10px;
-    font-size: 18px;
+    font-size: 30px;
 }
 
 .drawer_content {

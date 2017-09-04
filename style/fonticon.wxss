@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'iconfont';  /* project id 402002 */
-  src: url('//at.alicdn.com/t/font_402002_g40tshbsumm6xbt9.eot');
-  src: url('//at.alicdn.com/t/font_402002_g40tshbsumm6xbt9.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_402002_g40tshbsumm6xbt9.woff') format('woff'),
-  url('//at.alicdn.com/t/font_402002_g40tshbsumm6xbt9.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_402002_g40tshbsumm6xbt9.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_402002_raik2uvyzsuac3di.eot');
+  src: url('//at.alicdn.com/t/font_402002_raik2uvyzsuac3di.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_402002_raik2uvyzsuac3di.woff') format('woff'),
+  url('//at.alicdn.com/t/font_402002_raik2uvyzsuac3di.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_402002_raik2uvyzsuac3di.svg#iconfont') format('svg');
 }
 
 .iconfont {
@@ -34,6 +34,8 @@
 .icon-task:before { content: "\e603"; }
 
 .icon-saomiaotiaoma:before { content: "\e600"; }
+
+.icon-tupian:before { content: "\e607"; }
 
 .icon-xiaotuiche:before { content: "\e60b"; }
 
